@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "periscope",
+  "displayName": "Periscope",
+  "version": "0.1.0",
+  "description": "Periscope financial-data platform for Claude Code: bundles the Periscope MCP connector and the financial data-quality audit skill.",
+  "author": {
+    "name": "Periscope Ventures",
+    "url": "https://github.com/periscope-ventures"
+  },
+  "homepage": "https://github.com/periscope-ventures/periscope-plugins",
+  "repository": "https://github.com/periscope-ventures/periscope-plugins",
+  "license": "UNLICENSED",
+  "keywords": ["periscope", "finance", "financials", "audit", "data-quality", "sec", "xbrl", "mcp"]
+}
