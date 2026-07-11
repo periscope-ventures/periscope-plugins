@@ -9,7 +9,7 @@ drives them.
 
 | Component | What it does |
 | :-- | :-- |
-| **MCP connector** (`.mcp.json`) | Connects to the Periscope gateway at `https://mcp.periscope.ventures/mcp` over streamable HTTP. Auth is OAuth in the browser on first use — no tokens to configure. |
+| **MCP connector** (`.mcp.json`, server key `periscope-mcp`) | Connects to the Periscope gateway at `https://mcp.periscope.ventures/mcp` over streamable HTTP. Auth is OAuth in the browser on first use — no tokens to configure. |
 | **`audit` skill** (`skills/audit/`) | Audit and repair a company's financial facts: diagnose, apply the narrowest safe fix, re-verify against SEC filings, and log what can't be auto-fixed. Auto-invokes on requests like "audit AMZN" or "why is debt-to-equity broken for X". |
 
 ## Install
@@ -47,7 +47,7 @@ periscope-plugins/                     <- repo root = the marketplace
     └── periscope/                     <- the plugin
         ├── .claude-plugin/
         │   └── plugin.json            <- manifest
-        ├── .mcp.json                  <- Periscope HTTP MCP connector (server key: gateway)
+        ├── .mcp.json                  <- Periscope HTTP MCP connector (server key: periscope-mcp)
         ├── skills/
         │   └── audit/
         │       ├── SKILL.md

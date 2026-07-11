@@ -10,7 +10,10 @@
     {
       "name": "periscope",
       "source": "./plugins/periscope",
-      "description": "Periscope MCP connector + financial data-quality audit skill.",
+      "description": "Equity research over SEC filings via the Periscope MCP, plus a financial data-quality audit skill.",
+      "author": {
+        "name": "Archil Lelashvili"
+      },
       "category": "productivity"
     }
   ]
