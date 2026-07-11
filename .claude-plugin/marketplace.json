@@ -9,8 +9,9 @@
   "plugins": [
     {
       "name": "periscope",
-      "source": ".",
-      "description": "Periscope MCP connector + financial data-quality audit skill."
+      "source": "./plugins/periscope",
+      "description": "Periscope MCP connector + financial data-quality audit skill.",
+      "category": "productivity"
     }
   ]
 }

@@ -40,18 +40,21 @@ the plugin is then available in your synced Claude environment.
 ## Layout
 
 ```
-periscope-plugins/                 <- repo root = the plugin
+periscope-plugins/                     <- repo root = the marketplace
 ├── .claude-plugin/
-│   ├── plugin.json                <- manifest
-│   └── marketplace.json           <- lists this plugin so `marketplace add` works
-├── .mcp.json                      <- Periscope HTTP MCP connector (server key: gateway)
-├── skills/
-│   └── audit/
-│       ├── SKILL.md
-│       └── references/
-│           ├── checks.md          <- what each audit check means
-│           └── patterns.md        <- concrete fix pattern per problem
-└── README.md
+│   └── marketplace.json               <- lists the plugins below
+└── plugins/
+    └── periscope/                     <- the plugin
+        ├── .claude-plugin/
+        │   └── plugin.json            <- manifest
+        ├── .mcp.json                  <- Periscope HTTP MCP connector (server key: gateway)
+        ├── skills/
+        │   └── audit/
+        │       ├── SKILL.md
+        │       └── references/
+        │           ├── checks.md      <- what each audit check means
+        │           └── patterns.md    <- concrete fix pattern per problem
+        └── README.md
 ```
 
 ## Develop
