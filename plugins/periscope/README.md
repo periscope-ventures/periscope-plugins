@@ -1,16 +1,13 @@
 # Periscope plugin for Claude Code
 
-A single Claude Code plugin that bundles the **Periscope MCP connector** and the
-**financial data-quality audit skill**. Install it once and Claude gains both the
-Periscope tools (`fin_*`, `ops_*`, `watchlist_*`, …) and the `/audit` workflow that
-drives them.
+A single Claude Code plugin that bundles the **Periscope MCP connector**. Install it
+once and Claude gains the Periscope tools (`fin_*`, `ops_*`, `watchlist_*`, …).
 
 ## What's inside
 
 | Component | What it does |
 | :-- | :-- |
 | **MCP connector** (`.mcp.json`, server key `periscope-mcp`) | Connects to the Periscope gateway at `https://mcp.periscope.ventures/mcp` over streamable HTTP. Auth is OAuth in the browser on first use — no tokens to configure. |
-| **`audit` skill** (`skills/audit/`) | Audit and repair a company's financial facts: diagnose, apply the narrowest safe fix, re-verify against SEC filings, and log what can't be auto-fixed. Auto-invokes on requests like "audit AMZN" or "why is debt-to-equity broken for X". |
 
 ## Install
 
@@ -48,12 +45,6 @@ periscope-plugins/                     <- repo root = the marketplace
         ├── .claude-plugin/
         │   └── plugin.json            <- manifest
         ├── .mcp.json                  <- Periscope HTTP MCP connector (server key: periscope-mcp)
-        ├── skills/
-        │   └── audit/
-        │       ├── SKILL.md
-        │       └── references/
-        │           ├── checks.md      <- what each audit check means
-        │           └── patterns.md    <- concrete fix pattern per problem
         └── README.md
 ```
 

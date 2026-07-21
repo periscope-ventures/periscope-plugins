@@ -3,12 +3,12 @@
   "name": "periscope",
   "displayName": "Equity Research Tools",
   "version": "0.2.1",
-  "description": "Equity research over SEC filings, powered by the Periscope MCP. Tools pull company financials, statements, and multi-period trends live from EDGAR — plus filing text and semantic search — and support pipeline operations and watchlists. The bundled /audit skill diagnoses and repairs a company's financial data quality (XBRL tag mappings, derived line items, ratio inputs) and verifies the result against the filed statements. Identify any company by ticker or CIK.",
+  "description": "Equity research over SEC filings, powered by the Periscope MCP. Tools pull company financials, statements, and multi-period trends live from EDGAR — plus filing text and semantic search — and support pipeline operations and watchlists. Identify any company by ticker or CIK.",
   "author": {
     "name": "Periscope"
   },
   "homepage": "https://github.com/periscope-ventures/periscope-plugins",
   "repository": "https://github.com/periscope-ventures/periscope-plugins",
   "license": "UNLICENSED",
-  "keywords": ["periscope", "finance", "financials", "audit", "data-quality", "sec", "xbrl", "mcp"]
+  "keywords": ["periscope", "finance", "financials", "sec", "xbrl", "mcp"]
 }
