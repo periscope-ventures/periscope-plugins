@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "periscope",
   "displayName": "Equity Research Tools",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Equity research over SEC filings, powered by the Periscope MCP. Tools pull company financials, statements, and multi-period trends live from EDGAR — plus filing text and semantic search — and support pipeline operations and watchlists. Identify any company by ticker or CIK.",
   "author": {
     "name": "Periscope"
