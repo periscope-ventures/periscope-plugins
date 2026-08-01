@@ -10,6 +10,7 @@ skills. Install it once and Claude gains the Periscope tools (`fin_*`, `ops_*`,
 | :-- | :-- |
 | **MCP connector** (`.mcp.json`, server key `periscope-mcp`) | Connects to the Periscope gateway at `https://mcp.periscope.ventures/mcp` over streamable HTTP. Auth is OAuth in the browser on first use — no tokens to configure. |
 | **`prsc-functions` skill** (`skills/prsc-functions/`) | How to reference any Periscope data element from an Excel cell via the `PRSC.*` custom functions (the Periscope Office add-in) — writing live `=PRSC.FIN.*` / `=PRSC.MACRO.*` formulas that mirror the `fin_*`/`macro_*` MCP tools 1:1. |
+| **`standard-financials` skill** (`skills/standard-financials/`) | The standard-concept catalog behind `fin_standard_financials_and_ratios` — every standardized line item across the five groups (income statement, balance sheet, cash flow, disclosure, ratios) with its id, description, formula, and Damodaran valuation role. |
 
 ## Install
 
@@ -48,10 +49,14 @@ periscope-plugins/                     <- repo root = the marketplace
         │   └── plugin.json            <- manifest
         ├── .mcp.json                  <- Periscope HTTP MCP connector (server key: periscope-mcp)
         ├── skills/
-        │   └── prsc-functions/        <- using the PRSC.* Excel custom functions
+        │   ├── prsc-functions/        <- using the PRSC.* Excel custom functions
+        │   │   ├── SKILL.md
+        │   │   └── references/
+        │   │       └── functions.md   <- full per-function parameter reference
+        │   └── standard-financials/   <- the standard-concept catalog (reports & ratios)
         │       ├── SKILL.md
         │       └── references/
-        │           └── functions.md   <- full per-function parameter reference
+        │           └── concepts.md    <- all 111 concepts, grouped by statement & section
         └── README.md
 ```
 
