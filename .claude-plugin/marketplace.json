@@ -10,7 +10,6 @@
     {
       "name": "periscope",
       "source": "./plugins/periscope",
-      "description": "Equity research over SEC filings, powered by the Periscope MCP. Tools pull company financials, statements, and multi-period trends live from EDGAR — plus filing text and semantic search — and support pipeline operations and watchlists. Identify any company by ticker or CIK.",
       "author": {
         "name": "Periscope"
       },
