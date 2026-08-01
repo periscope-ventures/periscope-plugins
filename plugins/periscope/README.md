@@ -1,13 +1,15 @@
 # Periscope plugin for Claude Code
 
-A single Claude Code plugin that bundles the **Periscope MCP connector**. Install it
-once and Claude gains the Periscope tools (`fin_*`, `ops_*`, `watchlist_*`, …).
+A single Claude Code plugin that bundles the **Periscope MCP connector** and Periscope
+skills. Install it once and Claude gains the Periscope tools (`fin_*`, `ops_*`,
+`watchlist_*`, …) and knows how to reference Periscope data in Excel.
 
 ## What's inside
 
 | Component | What it does |
 | :-- | :-- |
 | **MCP connector** (`.mcp.json`, server key `periscope-mcp`) | Connects to the Periscope gateway at `https://mcp.periscope.ventures/mcp` over streamable HTTP. Auth is OAuth in the browser on first use — no tokens to configure. |
+| **`prsc-functions` skill** (`skills/prsc-functions/`) | How to reference any Periscope data element from an Excel cell via the `PRSC.*` custom functions (the Periscope Office add-in) — writing live `=PRSC.FIN.*` / `=PRSC.MACRO.*` formulas that mirror the `fin_*`/`macro_*` MCP tools 1:1. |
 
 ## Install
 
@@ -45,6 +47,11 @@ periscope-plugins/                     <- repo root = the marketplace
         ├── .claude-plugin/
         │   └── plugin.json            <- manifest
         ├── .mcp.json                  <- Periscope HTTP MCP connector (server key: periscope-mcp)
+        ├── skills/
+        │   └── prsc-functions/        <- using the PRSC.* Excel custom functions
+        │       ├── SKILL.md
+        │       └── references/
+        │           └── functions.md   <- full per-function parameter reference
         └── README.md
 ```
 
